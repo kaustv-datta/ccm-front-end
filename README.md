@@ -2,7 +2,17 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.2.
 
+## Getting started
+
+1. Install [Node.js](https://nodejs.org/en/)
+2. Install Angular CLI
+
+```
+npm install -g @angular/cli
+```
+
 ## Folder structure
+
 This project's folder structure has been designed by following the [angular-folder-structure](https://angular-folder-structure.readthedocs.io/en/latest/index.html) project principles.
 
 ## Development server
