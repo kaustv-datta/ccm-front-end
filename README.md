@@ -2,6 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.2.
 
+## Folder structure
+This project's folder structure has been designed by following the [angular-folder-structure](https://angular-folder-structure.readthedocs.io/en/latest/index.html) project principles.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
