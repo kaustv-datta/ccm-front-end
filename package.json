@@ -23,6 +23,7 @@
     "@ng-bootstrap/ng-bootstrap": "^7.0.0",
     "@types/jquery": "^3.5.0",
     "bootstrap": "^4.5.0",
+    "ecstatic": "^4.1.4",
     "jquery": "^3.5.1",
     "leaflet": "^1.6.0",
     "rxjs": "~6.5.5",

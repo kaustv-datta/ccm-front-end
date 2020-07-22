@@ -1,0 +1,19 @@
+{
+    "name": "Richard Laws Building, St. Edmund's College",
+    "id": "uk.ac.cam.st-edmunds.richard-laws",
+    "subentities": [],
+    "emissions": [{
+        "period-start": "2019-01-01T00:00:00",
+        "period-end": "2020-01-01T00:00:00",
+        "measure":"gas",
+        "unit": "m3",
+        "value": 2
+    },
+    {
+        "period-start": "2019-01-01T00:00:00",
+        "period-end": "2020-01-01T00:00:00",
+        "measure":"electricity",
+        "unit": "kWh",
+        "value": 9
+    }]
+}

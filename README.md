@@ -6,10 +6,14 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 1. Install [Node.js](https://nodejs.org/en/)
 2. Install Angular CLI
+(second line may be required also)
 
 ```
 npm install -g @angular/cli
+npm install --save-dev @angular-devkit/build-angular
 ```
+
+# Run with Angular
 
 ## Folder structure
 

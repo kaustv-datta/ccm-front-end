@@ -1,0 +1,6 @@
+{
+    "name": "St. Edmund's College",
+    "id": "uk.ac.cam.st-edmunds",
+    "subentities": ["uk.ac.cam.st-edmunds.white-cottage", "uk.ac.cam.st-edmunds.norfolk-building", "uk.ac.cam.st-edmunds.richard-laws"],
+    "emissions": []
+}
