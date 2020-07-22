@@ -33,21 +33,20 @@ export class MapComponent implements AfterViewInit {
     }
 
     //this.dataRoot = 'https://data.cambridgecarbonmap.org';
-    this.dataRoot = 'http://localhost:8084/'
+    this.dataRoot = 'http://localhost:8080/'
     this.initialLat = 52.205;
     this.initialLon = 0.1218;
     this.initialZoom = 12.5;
     this.mapDiv = 'map';
 
-    console.log("Initialised")
-    this.map = L.map(this.mapDiv, {
-      center: [this.initialLat, this.initialLon],
-      zoom: this.initialZoom,
+    this.map = L.map(this.mapDiv).setView([this.initialLat, this.initialLon], this.initialZoom);
+    const attribution = '&copy; <a href="https://www.openstreetmap/copyright">OpenStreeMap</a> contributors';
+
+    const tiles = L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
+      maxZoom: 20,
+      subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
     });
-    const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 19,
-      attribution: '&copy; <a href="https://www.openstreetmap/copyright">OpenStreeMap</a>',
-    });
+
 
     tiles.addTo(this.map);
     this.lock = false;
@@ -101,12 +100,6 @@ export class MapComponent implements AfterViewInit {
 
       $.ajaxSetup({
         'async': false,
-        'headers': {
-          'Access-Control-Allow-Origin': '*',
-          "Access-Control-Allow-Credentials": "true",
-          'Access-Control-Allow-Methods': "GET",//,HEAD,OPTIONS,POST,PUT",
-          'Access-Control-Allow-Headers': "Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers"
-        }
       });
       $.getJSON(that.dataRoot + "/geojson/" + addr + ".geojson", function (geojson) {
         L.geoJSON(geojson,
@@ -259,11 +252,6 @@ export class MapComponent implements AfterViewInit {
         'async': false,
         'global': false,
         'url': that.dataRoot + `reporting_entities/` + id + `.json`,
-        'headers': {
-          'Access-Control-Allow-Origin': "*",
-          'Access-Control-Allow-Methods': "GET,HEAD,OPTIONS,POST,PUT",
-          'Access-Control-Allow-Headers': "Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers"
-        },
         'dataType': "json",
         'success': function (data) {
           obj = data;
