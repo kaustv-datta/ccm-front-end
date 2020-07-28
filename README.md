@@ -12,9 +12,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 npm install -g @angular/cli
 npm install --save-dev @angular-devkit/build-angular
 ```
-3. Include jQuery for npm
+3. Include all required node modules in the project
 ```
-npm i @types/jquery
+npm install
 ```
 
 ## Emulate data server
