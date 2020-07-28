@@ -1,0 +1,33 @@
+{
+    "name": "King's College",
+    "id": "uk.ac.cam.kings",
+    "subentities": ["uk.ac.cam.kings.kingsparade","uk.ac.cam.kings.spalding","uk.ac.cam.kings.kingsfield","uk.ac.cam.kings.garden","uk.ac.cam.kings.grasshopper","uk.ac.cam.kings.cranmer","uk.ac.cam.kings.st-edwards","uk.ac.cam.kings.tcr","uk.ac.cam.kings.plodge","uk.ac.cam.kings.bodleys","uk.ac.cam.kings.old-site","uk.ac.cam.kings.provosts-lodge","uk.ac.cam.kings.webbs","uk.ac.cam.kings.keynes","uk.ac.cam.kings.a-staircase","uk.ac.cam.kings.wilkins"],
+    "emissions": [{
+        "period-start": "2019-01-01T00:00:00",
+        "period-end": "2020-01-01T00:00:00",
+        "measure":"gas",
+        "unit": "m3",
+        "value": 2
+    },
+    {
+        "period-start": "2019-01-01T00:00:00",
+        "period-end": "2020-01-01T00:00:00",
+        "measure":"electricity",
+        "unit": "kWh",
+        "value": 9
+    },
+    {
+        "period-start": "2018-01-01T00:00:00",
+        "period-end": "2019-01-01T00:00:00",
+        "measure":"gas",
+        "unit": "m3",
+        "value": 2
+    },
+    {
+        "period-start": "2018-01-01T00:00:00",
+        "period-end": "2019-01-01T00:00:00",
+        "measure":"electricity",
+        "unit": "kWh",
+        "value": 9
+    }]
+}

@@ -21,14 +21,17 @@
     "@angular/platform-browser-dynamic": "~10.0.3",
     "@angular/router": "~10.0.3",
     "@ng-bootstrap/ng-bootstrap": "^7.0.0",
+    "@types/jquery": "^3.5.0",
     "bootstrap": "^4.5.0",
+    "ecstatic": "^4.1.4",
+    "jquery": "^3.5.1",
     "leaflet": "^1.6.0",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.1000.2",
+    "@angular-devkit/build-angular": "^0.1000.3",
     "@angular/cli": "~10.0.2",
     "@angular/compiler-cli": "~10.0.3",
     "@types/jasmine": "~3.5.0",

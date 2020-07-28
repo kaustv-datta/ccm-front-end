@@ -13,7 +13,15 @@ exports.config = {
     './src/**/*.e2e-spec.ts'
   ],
   capabilities: {
-    browserName: 'chrome'
+    browserName: 'chrome',
+    // New for docker
+    'chromeOptions': {
+      'args': [
+        '--no-sandbox',
+        '--headless',
+        '--window-size=1024,768'
+      ]
+    }
   },
   directConnect: true,
   baseUrl: 'http://localhost:4200/',
@@ -21,7 +29,7 @@ exports.config = {
   jasmineNodeOpts: {
     showColors: true,
     defaultTimeoutInterval: 30000,
-    print: function() {}
+    print: function () { }
   },
   onPrepare() {
     require('ts-node').register({

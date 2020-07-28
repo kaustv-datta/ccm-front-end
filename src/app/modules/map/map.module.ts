@@ -7,4 +7,4 @@ import { MapRoutingModule } from './map.routing';
   declarations: [MapComponent],
   imports: [CommonModule, MapRoutingModule],
 })
-export class MapModule {}
+export class MapModule { }
